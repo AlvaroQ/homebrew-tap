@@ -5,21 +5,21 @@
 class EngramExplorer < Formula
   desc "Local web dashboard for exploring Engram memory database"
   homepage "https://github.com/AlvaroQ/engram-explorer"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/AlvaroQ/engram-explorer/releases/download/v0.1.0/engram-explorer_0.1.0_darwin_amd64.tar.gz"
-      sha256 "3dff9f3995e3e3bd42ddacb041721dc21baa7a0bca1c9378a5698768cf8cab2c"
+      url "https://github.com/AlvaroQ/engram-explorer/releases/download/v0.2.0/engram-explorer_0.2.0_darwin_amd64.tar.gz"
+      sha256 "7faf4c1264684357b81c0997bb9d23d90cb5cf42c55be29375a282a70575e10c"
 
       define_method(:install) do
         bin.install "engram-explorer"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/AlvaroQ/engram-explorer/releases/download/v0.1.0/engram-explorer_0.1.0_darwin_arm64.tar.gz"
-      sha256 "9364f8df068aed531208c3dfeafc7db231e1cb472a1d9972ad2d8e6b4e0003db"
+      url "https://github.com/AlvaroQ/engram-explorer/releases/download/v0.2.0/engram-explorer_0.2.0_darwin_arm64.tar.gz"
+      sha256 "13d56c7bab501edd0f5e797de7269377703a5b470f425acab20eb3a2e139729b"
 
       define_method(:install) do
         bin.install "engram-explorer"
@@ -29,15 +29,15 @@ class EngramExplorer < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/AlvaroQ/engram-explorer/releases/download/v0.1.0/engram-explorer_0.1.0_linux_amd64.tar.gz"
-      sha256 "2e5c1a61c612173fe7170e5bfa2253dae7d4c2c77296b58b5d5fb7f658c6952d"
+      url "https://github.com/AlvaroQ/engram-explorer/releases/download/v0.2.0/engram-explorer_0.2.0_linux_amd64.tar.gz"
+      sha256 "50a5dc41ed422fccc3b3950b46334b9fd7efad9b9a2f4bd0da612a95b2ad38b8"
       define_method(:install) do
         bin.install "engram-explorer"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/AlvaroQ/engram-explorer/releases/download/v0.1.0/engram-explorer_0.1.0_linux_arm64.tar.gz"
-      sha256 "21c4040bb9b5af29ae8761a0cd7ee2628902a42c52569fdd75f1730db421188b"
+      url "https://github.com/AlvaroQ/engram-explorer/releases/download/v0.2.0/engram-explorer_0.2.0_linux_arm64.tar.gz"
+      sha256 "3c0cddf9c61d393e344bef219cbba9b15895d54c094d54798a64d91edff40bec"
       define_method(:install) do
         bin.install "engram-explorer"
       end
